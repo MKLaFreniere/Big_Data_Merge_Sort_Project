@@ -3,6 +3,8 @@
 This was a very interesting project I did for my Massive Data Management course. It is
 based on LSM trees, as I had just learned about them at the time and wanted to try to implement one in some way.
 
+## Description
+
 The final product of this goal is 2 separate programs that run in a Linux environment. MergeSort.cpp takes a write 
 transaction file and sorts it by key, though using limited memory. To do this, the file is separated by the memory limit and put into
 sections within txt files. Each of these files are sorted independently of each other. The program then sorts all these txt files
@@ -12,9 +14,13 @@ Once this is done, there is a set of kv stores that have sorted all keys pertain
 The Read.cpp allows a user to input a read transaction file. This gives the user a list of the data related to its respective key. Because of the
 way this whole thing is sorted, it is much faster to read than other more basic methods, with the addition of using less memory for the entire process.
 
+## How to Run
+
 To run this program, log into a linux environment (I used version gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)) and type 'make' into the proper directory. 
 This will compile the programs. Next, make sure the transaction files are in the same directory as the program and follow the on screen instructions. 
 After a program is done, you can look at the directory to see the result.
+
+## What I learned
 
 While doing this project, I learned a lot more than just how a MergeSort algorithm is used to efficiently store data. For instance, this project 
 was a great introduction to working in a Linux environment with C++. There were many times where I needed to use functions that people normally wouldn't use in
