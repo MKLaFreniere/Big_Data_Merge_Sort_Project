@@ -12,6 +12,10 @@ Once this is done, there is a set of kv stores that have sorted all keys pertain
 The Read.cpp allows a user to input a read transaction file. This gives the user a list of the data related to its respective key. Because of the
 way this whole thing is sorted, it is much faster to read than other more basic methods, with the addition of using less memory for the entire process.
 
+To run this program, log into a linux environment (I used version gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)) and type 'make' into the proper directory. 
+This will compile the programs. Next, make sure the transaction files are in the same directory as the program and follow the on screen instructions. 
+After a program is done, you can look at the directory to see the result.
+
 While doing this project, I learned a lot more than just how a MergeSort algorithm is used to efficiently store data. For instance, this project 
 was a great introduction to working in a Linux environment with C++. There were many times where I needed to use functions that people normally wouldn't use in
 C++, such as posix for quick reading of a file as well as some major differences between C and C++. This sort of unfamiliarity quickly got
